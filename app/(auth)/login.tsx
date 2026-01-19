@@ -1,4 +1,5 @@
 // app/(auth)/login.tsx
+import { PrimaryButton } from "@/components";
 import { Ionicons } from "@expo/vector-icons";
 import { router } from "expo-router";
 import { useState } from "react";
@@ -36,7 +37,6 @@ export default function LoginScreen() {
           keyboardType="phone-pad"
           style={styles.input}
         />
-
         <Text style={styles.label}>Password</Text>
         <View style={styles.passwordWrapper}>
           <TextInput
@@ -55,26 +55,19 @@ export default function LoginScreen() {
             />
           </TouchableOpacity>
         </View>
-
         <TouchableOpacity style={styles.forgot}>
           <Text style={styles.forgotText}>Forgot Password?</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.signInButton} onPress={() => router.replace('/(tabs)/home')}>
-          <Text style={styles.signInText}>Sign In</Text>
-          <Ionicons name="arrow-forward" size={18} color="#fff" />
-        </TouchableOpacity>
-
+          <PrimaryButton text="Sign In" onPress={() => router.replace('/(tabs)/home')}/>
         <View style={styles.divider}>
           <View style={styles.line} />
           <Text style={styles.or}>Or continue with</Text>
           <View style={styles.line} />
         </View>
-
         <View style={styles.socialRow}>
           <Ionicons name="logo-google" size={40} color="#4285F4" />
           <Ionicons name='logo-facebook' size={40} color={'blue'}/>
         </View>
-
         <View style={styles.registerRow}>
           <Text style={styles.registerText}> Don&rsquo;t have an account?</Text>
           <TouchableOpacity>
