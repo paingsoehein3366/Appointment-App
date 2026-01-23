@@ -168,7 +168,6 @@ export default function ServicesScreen() {
           <Text style={styles.ratingText}>{item.rating}</Text>
         </View>
       </View>
-
       <View style={styles.serviceContent}>
         <View style={styles.serviceHeader}>
           <Text style={styles.serviceTitle}>{item.title}</Text>
@@ -176,11 +175,9 @@ export default function ServicesScreen() {
             <Ionicons name="heart-outline" size={20} color="#9CA3AF" />
           </TouchableOpacity>
         </View>
-
         <Text style={styles.serviceDescription} numberOfLines={2}>
           {item.description}
         </Text>
-
         <View style={styles.serviceFooter}>
           <View style={styles.detailsContainer}>
             <View style={styles.detailItem}>

@@ -18,7 +18,6 @@ export default function TabLayout() {
           ),
         }}
       />
-
       <Tabs.Screen
         name="services"
         options={{
@@ -28,7 +27,6 @@ export default function TabLayout() {
           ),
         }}
       />
-
       <Tabs.Screen
         name="appointments"
         options={{
@@ -38,7 +36,6 @@ export default function TabLayout() {
           ),
         }}
       />
-
       <Tabs.Screen
         name="profile"
         options={{

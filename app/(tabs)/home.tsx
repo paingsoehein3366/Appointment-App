@@ -76,8 +76,6 @@ export default function HomeScreen() {
             <Text style={styles.viewAll}>View All</Text>
           </TouchableOpacity>
         </View>
-
-        {/* Grid layout for 4 service cards (2x2) */}
         <View style={styles.servicesGrid}>
           {services.map((item) => (
             <Card key={item.id} style={[styles.serviceCard, { width: cardWidth }]}>
@@ -88,7 +86,6 @@ export default function HomeScreen() {
                     <Text style={styles.durationText}>{item.duration}</Text>
                   </View>
                 </View>
-
                 <Text style={styles.serviceTitle} numberOfLines={2}>
                   {item.title}
                 </Text>
@@ -116,7 +113,6 @@ export default function HomeScreen() {
           </Card.Content>
         </Card>
       </ScrollView>
-
       <View style={styles.buttonContainer}>
         <PrimaryButton text="Confirm Booking" onPress={() => { }} />
       </View>

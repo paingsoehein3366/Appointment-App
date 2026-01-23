@@ -19,7 +19,6 @@ export const SimpleBookServiceHeaderCard = () => {
           Book Service
         </Text>
       </View>
-
       <Searchbar
         placeholder="Find a service..."
         onChangeText={setSearchQuery}
